@@ -4,10 +4,10 @@
 """
 Pytube: a very serious Python library for downloading YouTube Videos.
 """
-__title__ = "pytube3"
-__author__ = "Nick Ficano, Harold Martin"
+__title__ = "pytubeX"
+__author__ = "Max Booth, Nick Ficano, Harold Martin"
 __license__ = "MIT License"
-__copyright__ = "Copyright 2019 Nick Ficano"
+__copyright__ = "Copyright 2020 Max Booth"
 
 from pytube.version import __version__
 from pytube.streams import Stream
