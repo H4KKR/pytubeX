@@ -12,6 +12,7 @@
 </div>
 
 # pytube4
+An improvised fork from `pytube3` that has been left unmaintained for months. I've fixed the bugs, done a bit of spring cleaning and got it working for the updated YouTube site that broke it. Will happily give back control to the origional owners of `pytube3` if they want it!
 
 ## Table of Contents
   * [Installation](#installation)
