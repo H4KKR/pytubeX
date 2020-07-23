@@ -24,12 +24,7 @@
 
 ## Installation
 
-Download using pip via pypi.
-
-```bash
-$ pip install pytube3 --upgrade
-```
-(Mac/homebrew users may need to use ``pip3``)
+Unfortunately, pytube4 isn't yet supporting pip download. We are working on it! Right now, there is no way to install. Hang tight!!!
 
 
 ## Quick start
