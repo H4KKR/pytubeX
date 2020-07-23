@@ -3,9 +3,11 @@
 """This module contains setup instructions for pytube3."""
 import codecs
 import os
-from setuptools import setup
+from setuptools import find_packages, setup
+
 
 here = os.path.abspath(os.path.dirname(__file__))
+README = (here / "README.md").read_text()
 
 with codecs.open(os.path.join(here, "README.md"), encoding="utf-8") as fh:
     long_description = "\n" + fh.read()
@@ -15,7 +17,7 @@ with open(os.path.join(here, "pytube", "version.py")) as fp:
 
 setup(
     name="pytube4",
-    version=__version__,  # noqa: F821
+    version="0.1",  
     author="Max Booth, Nick Ficano, Harold Martin",
     author_email="nficano@gmail.com, harold.martin@gmail.com",
     packages=["pytube", "pytube.contrib"],
@@ -28,6 +30,7 @@ setup(
         "Development Status :: 5 - Production/Stable",
         "Environment :: Console",
         "Intended Audience :: Developers",
+        "License :: OSI Approved :: MIT License",
         "Natural Language :: English",
         "Operating System :: MacOS",
         "Operating System :: Microsoft",
@@ -43,7 +46,7 @@ setup(
         "Topic :: Terminals",
         "Topic :: Utilities",
     ],
-    description=("Python 3 library for downloading YouTube Videos. Fork from origional pytube3 that has gone unmaintained for months."),
+    description=("Python 3 library for downloading YouTube Videos. Fork from pytube3, an unmaintained library."),
     include_package_data=True,
     long_description_content_type="text/markdown",
     long_description=long_description,

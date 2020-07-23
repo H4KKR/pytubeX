@@ -1,4 +1,17 @@
-# pytube4
+
+<div align="center">
+  <p align="center">
+	  <a href="https://pypi.org/project/pytube3/"><img src="https://img.shields.io/pypi/v/pytube3.svg" alt="pypi"></a>
+	  <a href="https://pypi.python.org/pypi/pytube3/"><img src="https://img.shields.io/pypi/pyversions/pytube3.svg" /></a>
+	  <a href="https://travis-ci.com/hbmartin/pytube3/"><img src="https://travis-ci.org/hbmartin/pytube3.svg?branch=master" /></a>
+	  <a href='https://pytube3.readthedocs.io/en/latest/?badge=latest'><img src='https://readthedocs.org/projects/pytube3/badge/?version=latest' alt='Documentation Status' /></a>
+	  <a href="https://codecov.io/gh/hbmartin/pytube3"><img src="https://codecov.io/gh/hbmartin/pytube3/branch/master/graph/badge.svg" /></a>
+	  <a href="https://www.codefactor.io/repository/github/hbmartin/pytube3/overview/master"><img src="https://www.codefactor.io/repository/github/hbmartin/pytube3/badge/master" alt="CodeFactor" /></a>
+	  <a href="https://gitter.im/pytube3/community"><img src="https://img.shields.io/badge/chat-gitter-lightgrey" /></a>
+  </p>
+</div>
+
+# pytube3
 
 ## Table of Contents
   * [Installation](#installation)
@@ -11,7 +24,12 @@
 
 ## Installation
 
-Unfortunately, pytube4 isn't yet supporting pip download. We are working on it! Right now, there is no way to install. Hang tight!!!
+Download using pip via pypi.
+
+```bash
+$ pip install pytube3 --upgrade
+```
+(Mac/homebrew users may need to use ``pip3``)
 
 
 ## Quick start
