@@ -1,3 +1,16 @@
+
+<div align="center">
+  <p align="center">
+	  <a href="https://pypi.org/project/pytube3/"><img src="https://img.shields.io/pypi/v/pytube3.svg" alt="pypi"></a>
+	  <a href="https://pypi.python.org/pypi/pytube3/"><img src="https://img.shields.io/pypi/pyversions/pytube3.svg" /></a>
+	  <a href="https://travis-ci.com/hbmartin/pytube3/"><img src="https://travis-ci.org/hbmartin/pytube3.svg?branch=master" /></a>
+	  <a href='https://pytube3.readthedocs.io/en/latest/?badge=latest'><img src='https://readthedocs.org/projects/pytube3/badge/?version=latest' alt='Documentation Status' /></a>
+	  <a href="https://codecov.io/gh/hbmartin/pytube3"><img src="https://codecov.io/gh/hbmartin/pytube3/branch/master/graph/badge.svg" /></a>
+	  <a href="https://www.codefactor.io/repository/github/hbmartin/pytube3/overview/master"><img src="https://www.codefactor.io/repository/github/hbmartin/pytube3/badge/master" alt="CodeFactor" /></a>
+	  <a href="https://gitter.im/pytube3/community"><img src="https://img.shields.io/badge/chat-gitter-lightgrey" /></a>
+  </p>
+</div>
+
 # pytube4
 
 ## Table of Contents
@@ -11,7 +24,12 @@
 
 ## Installation
 
-Unfortunately, pytube4 isn't yet supporting pip download. We are working on it! Right now, there is no way to install. Hang tight!!!
+Download using pip via pypi.
+
+```bash
+$ pip install pytube4 --upgrade
+```
+(Mac/homebrew users may need to use ``pip3``)
 
 
 ## Quick start
@@ -25,7 +43,7 @@ Unfortunately, pytube4 isn't yet supporting pip download. We are working on it! 
   ... .order_by('resolution')[-1]
   ... .download()
 ```
-A GUI frontend for pytube3 is available at [YouTubeDownload](https://github.com/YouTubeDownload/YouTubeDownload)
+A GUI frontend for pytube3is available at [YouTubeDownload](https://github.com/YouTubeDownload/YouTubeDownload)
 
 ## Features
   * Support for Both Progressive & DASH Streams
@@ -206,23 +224,23 @@ Similarly, if your application requires on-download progress logic, pytube expos
 
 ## Command-line interface
 
-pytube3 ships with a simple CLI interface for downloading videos, playlists, and captions.
+pytube4 ships with a simple CLI interface for downloading videos, playlists, and captions.
 
 Let's start with downloading:
 
 ```bash
-$ pytube3 http://youtube.com/watch?v=9bZkp7q19f0 --itag=18
+$ pytube4 http://youtube.com/watch?v=9bZkp7q19f0 --itag=18
 ```
 To view available streams:
 
 ```bash
-$ pytube3 http://youtube.com/watch?v=9bZkp7q19f0 --list
+$ pytube4 http://youtube.com/watch?v=9bZkp7q19f0 --list
 ```
 
 The complete set of flags are:
 
 ```
-usage: pytube3 [-h] [--version] [--itag ITAG] [-r RESOLUTION] [-l] [-v]
+usage: pytube4 [-h] [--version] [--itag ITAG] [-r RESOLUTION] [-l] [-v]
                [--build-playback-report] [-c [CAPTION_CODE]] [-t TARGET]
                [-a [AUDIO]] [-f [FFMPEG]]
                [url]
@@ -261,15 +279,6 @@ optional arguments:
 ```
 
 
-## Development
-
-<a href="https://deepsource.io/gh/hbmartin/pytube3/?ref=repository-badge" target="_blank"><img alt="DeepSource" title="DeepSource" src="https://static.deepsource.io/deepsource-badge-light-mini.svg"></a>
-<a href="https://www.codacy.com/manual/hbmartin/pytube3?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=hbmartin/pytube3&amp;utm_campaign=Badge_Grade"><img src="https://api.codacy.com/project/badge/Grade/53794f06983a46829620b3284c6a5596"/></a>
-<a href="https://github.com/ambv/black"><img src="https://img.shields.io/badge/code%20style-black-000000.svg" /></a>
-
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
-
-To run code checking before a PR use ``make test``
 
 #### Virtual environment
 
