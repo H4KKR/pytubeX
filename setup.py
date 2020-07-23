@@ -14,21 +14,20 @@ with open(os.path.join(here, "pytube", "version.py")) as fp:
     exec(fp.read())
 
 setup(
-    name="pytube3",
+    name="pytube4",
     version=__version__,  # noqa: F821
-    author="Nick Ficano, Harold Martin",
+    author="Max Booth, Nick Ficano, Harold Martin",
     author_email="nficano@gmail.com, harold.martin@gmail.com",
     packages=["pytube", "pytube.contrib"],
     package_data={"": ["LICENSE"],},
-    url="https://github.com/hbmartin/pytube3",
+    url="https://github.com/H4KKR/pytube4",
     license="MIT",
-    entry_points={"console_scripts": ["pytube3 = pytube.cli:main",],},
+    entry_points={"console_scripts": ["pytube4 = pytube.cli:main",],},
     install_requires=["typing_extensions"],
     classifiers=[
         "Development Status :: 5 - Production/Stable",
         "Environment :: Console",
         "Intended Audience :: Developers",
-        "License :: OSI Approved :: MIT License",
         "Natural Language :: English",
         "Operating System :: MacOS",
         "Operating System :: Microsoft",
@@ -44,14 +43,14 @@ setup(
         "Topic :: Terminals",
         "Topic :: Utilities",
     ],
-    description=("Python 3 library for downloading YouTube Videos."),
+    description=("Python 3 library for downloading YouTube Videos. Fork from origional pytube3 that has gone unmaintained for months."),
     include_package_data=True,
     long_description_content_type="text/markdown",
     long_description=long_description,
     zip_safe=True,
     python_requires=">=3.6",
     project_urls={
-        "Bug Reports": "https://github.com/hbmartin/pytube3/issues",
+        "Bug Reports": "https://github.com/hbmartin/pytube3/issues, https://github.com/H4KKR/pytube4/issues",
         "Read the Docs": "https://pytube3.readthedocs.io/en/latest/?badge=latest",
     },
     keywords=["youtube", "download", "video", "stream",],
