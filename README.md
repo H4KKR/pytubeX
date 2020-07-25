@@ -44,7 +44,7 @@ $ pip install pytubeX
   ... .order_by('resolution')[-1]
   ... .download()
 ```
-A GUI frontend for pytube3is available at [YouTubeDownload](https://github.com/YouTubeDownload/YouTubeDownload)
+A GUI frontend for pytube3 is available at [YouTubeDownload](https://github.com/YouTubeDownload/YouTubeDownload)
 
 ## Features
   * Support for Both Progressive & DASH Streams
@@ -225,23 +225,23 @@ Similarly, if your application requires on-download progress logic, pytube expos
 
 ## Command-line interface
 
-pytube4 ships with a simple CLI interface for downloading videos, playlists, and captions.
+pytubeX ships with a simple CLI interface for downloading videos, playlists, and captions.
 
 Let's start with downloading:
 
 ```bash
-$ pytube4 http://youtube.com/watch?v=9bZkp7q19f0 --itag=18
+$ pytubeX http://youtube.com/watch?v=9bZkp7q19f0 --itag=18
 ```
 To view available streams:
 
 ```bash
-$ pytube4 http://youtube.com/watch?v=9bZkp7q19f0 --list
+$ pytubeX http://youtube.com/watch?v=9bZkp7q19f0 --list
 ```
 
 The complete set of flags are:
 
 ```
-usage: pytube4 [-h] [--version] [--itag ITAG] [-r RESOLUTION] [-l] [-v]
+usage: pytubeX [-h] [--version] [--itag ITAG] [-r RESOLUTION] [-l] [-v]
                [--build-playback-report] [-c [CAPTION_CODE]] [-t TARGET]
                [-a [AUDIO]] [-f [FFMPEG]]
                [url]
