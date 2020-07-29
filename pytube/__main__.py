@@ -312,6 +312,34 @@ class YouTube:
         """
         return self.player_response.get("videoDetails", {}).get("author", "unknown")
 
+    @property
+    def publish_date(self) -> str:
+        """Get the video publish day.
+        :rtype: str
+        """
+        return self.player_response.get("microformat", {}).get("playerMicroformatRenderer", {}).get("publishDate")
+
+    @property
+    def upload_date(self) -> str:
+        """Get the video upload day.
+        :rtype: str
+        """
+        return self.player_response.get("microformat", {}).get("playerMicroformatRenderer", {}).get("uploadDate")
+
+    @property
+    def keywords(self) -> list:
+        """Get keywords associated with the video.
+        :rtype: list
+        """
+        return self.player_response.get("videoDetails", {}).get("keywords", [])
+
+    @property
+    def category(self) -> str:
+        """Get the video category.
+        :rtype: str
+        """
+        return self.player_response.get("microformat", {}).get("playerMicroformatRenderer", {}).get("category")
+
     def register_on_progress_callback(self, func: OnProgress):
         """Register a download progress callback function post initialization.
 
