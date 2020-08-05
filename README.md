@@ -225,23 +225,23 @@ Similarly, if your application requires on-download progress logic, pytube expos
 
 ## Command-line interface
 
-pytubeX ships with a simple CLI interface for downloading videos, playlists, and captions.
+pytubeX ships with a simple CLI interface (named pytube4) for downloading videos, playlists, and captions.
 
 Let's start with downloading:
 
 ```bash
-$ pytubeX http://youtube.com/watch?v=9bZkp7q19f0 --itag=18
+$ pytube4 http://youtube.com/watch?v=9bZkp7q19f0 --itag=18
 ```
 To view available streams:
 
 ```bash
-$ pytubeX http://youtube.com/watch?v=9bZkp7q19f0 --list
+$ pytube4 http://youtube.com/watch?v=9bZkp7q19f0 --list
 ```
 
 The complete set of flags are:
 
 ```
-usage: pytubeX [-h] [--version] [--itag ITAG] [-r RESOLUTION] [-l] [-v]
+usage: pytube4 [-h] [--version] [--itag ITAG] [-r RESOLUTION] [-l] [-v]
                [--build-playback-report] [-c [CAPTION_CODE]] [-t TARGET]
                [-a [AUDIO]] [-f [FFMPEG]]
                [url]
