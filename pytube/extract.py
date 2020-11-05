@@ -197,7 +197,10 @@ def get_ytplayer_config(html: str) -> Any:
         if function_match:
             logger.debug("finished regex search, matched: %s", pattern)
             yt_player_config = function_match.group(1)
-            return json.loads(yt_player_config)
+            try:
+                return json.loads(yt_player_config)
+            except:
+                pass
 
     raise RegexMatchError(caller="get_ytplayer_config", pattern="config_patterns")
 
