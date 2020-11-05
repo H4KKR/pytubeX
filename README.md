@@ -14,6 +14,10 @@
 # pytubeX
 An improvised fork from `pytube3` that has been left unmaintained for months. I've fixed the bugs, done a bit of spring cleaning and got it working for the updated YouTube site that broke it. Will happily give back control to the origional owners of `pytube3` if they want it!
 
+# FAIR USE POLICY
+  * You may not use this software to download any material you do not have express permission to download. We will not aid any illicit activity or piracy!
+  	* Think of us like a knife manufacturer. We have a legitimate use for knives, so the knife manufacturer shouldn't be held responsible for the rise in knifecrime rates in London. It is completely your choice to misuse this software and your choice it will remain, I will not be held responsible.
+
 ## Table of Contents
   * [Installation](#installation)
   * [Quick start](#quick-start)
